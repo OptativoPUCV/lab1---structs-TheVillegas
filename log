@@ -69,3 +69,38 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 5e4f221
+Thu 09 Mar 2023 03:56:16 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:18:3: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   17 |   int numero = *a
+      |                ~~
+      |                |
+      |                int
+   18 |   *a = *b
+      |   ^
+exercises.c:19:3: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   18 |   *a = *b
+      |        ~~
+      |        |
+      |        int
+   19 |   *b = numero
+      |   ^
+exercises.c:21:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   21 | }
+      | ^
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+184f733
