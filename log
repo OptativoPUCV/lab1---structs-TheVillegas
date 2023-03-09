@@ -104,3 +104,24 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 184f733
+Thu 09 Mar 2023 03:56:22 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:18:3: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   17 |   int numero = *a
+      |                ~~
+      |                |
+      |                int
+   18 |   *a = *b
+      |   ^
+exercises.c:19:3: error: invalid operands to binary * (have ‘int’ and ‘int *’)
+   18 |   *a = *b
+      |        ~~
+      |        |
+      |        int
+   19 |   *b = numero;
+      |   ^
+Compilation failed
+01919d0

@@ -16,7 +16,7 @@ void swap(int *a, int *b) {
 
   int numero = *a
   *a = *b
-  *b = numero
+  *b = numero;
 
 }
 
