@@ -27,7 +27,24 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-    
+  int numero;
+  int vector[n];
+ 
+  for(int k = 0 ; k < n ; k++)
+    {
+      scanf("%d",numero);
+      scanf("%d",*a);
+      if(numero > *a)
+      {
+        vector[k].max = numero;
+      }
+      else
+      {
+        vector[k].max = *a;
+      }
+      
+    }
+  
 }
 
 
