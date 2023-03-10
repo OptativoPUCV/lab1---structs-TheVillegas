@@ -235,3 +235,9 @@ exercises.c:30:12: error: ‘vector’ undeclared (first use in this function)
 exercises.c:30:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 730e6f2
+Fri 10 Mar 2023 06:10:55 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 20/70
+c9e7648
