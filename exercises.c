@@ -32,8 +32,8 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
  
   for(int k = 0 ; k < n ; k++)
     {
-      scanf("%d",*numero);
-      scanf("%d",*a);
+      scanf("%d",numero);
+      scanf("%d",a);
       if(numero > *a)
       {
         vector[k].max = numero;

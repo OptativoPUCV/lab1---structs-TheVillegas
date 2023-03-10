@@ -195,3 +195,32 @@ exercises.c:36:7: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 be7ea84
+Fri 10 Mar 2023 05:50:11 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:35:15: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Werror=format=]
+   35 |       scanf("%d",numero);
+      |              ~^  ~~~~~~
+      |               |  |
+      |               |  int
+      |               int *
+exercises.c:39:18: error: request for member ‘max’ in something not a structure or union
+   39 |         vector[k].max = numero;
+      |                  ^
+exercises.c:43:18: error: request for member ‘max’ in something not a structure or union
+   43 |         vector[k].max = *a;
+      |                  ^
+exercises.c:31:7: error: variable ‘vector’ set but not used [-Werror=unused-but-set-variable]
+   31 |   int vector[n];
+      |       ^~~~~~
+exercises.c:35:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   35 |       scanf("%d",numero);
+      |       ^~~~~~~~~~~~~~~~~~
+exercises.c:36:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   36 |       scanf("%d",a);
+      |       ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a5a3685
