@@ -224,3 +224,14 @@ exercises.c:36:7: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 a5a3685
+Fri 10 Mar 2023 06:10:43 PM UTC: 
+ exercises.c | 24 +++++++++---------------
+ 1 file changed, 9 insertions(+), 15 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:30:12: error: ‘vector’ undeclared (first use in this function)
+   30 |     *max = vector[0];
+      |            ^~~~~~
+exercises.c:30:12: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+730e6f2
