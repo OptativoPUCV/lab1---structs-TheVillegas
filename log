@@ -470,3 +470,29 @@ Tue 14 Mar 2023 11:17:33 PM UTC:
  tests:  3|4
 total_score: 30/70
 1d1a6dc
+Tue 14 Mar 2023 11:38:31 PM UTC: 
+ exercises.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:110:1: error: expected identifier or ‘(’ before ‘}’ token
+  110 | }
+      | ^
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:99:1: error: control reaches end of non-void function [-Werror=return-type]
+   99 | }
+      | ^
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+257c27b
