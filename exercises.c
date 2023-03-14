@@ -88,13 +88,13 @@ typedef struct {
 
 Vector * crearVector(int n) {
     
-   Vector * v = (Vector *) realloc(v,n * sizeof(Vector));
+   Vector * v = (Vector *) calloc(n,sizeof(Vector));
   if(v == NULL)
   {
     return NULL;
   }
-
   
+  return v;
    
 }
 
