@@ -285,3 +285,20 @@ exercises.c:54:8: note: while referencing ‘rut’
 cc1: all warnings being treated as errors
 Compilation failed
 6449ec5
+Tue 14 Mar 2023 11:07:59 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   62 |   scanf("%c", &(*p).nombre[30]);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:63:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   63 |   scanf("%c", &(*p).rut[11]);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:64:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   64 |   scanf("%d", &(*p).edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+720a9a3
