@@ -496,3 +496,26 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 257c27b
+Tue 14 Mar 2023 11:38:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:108:3: error: ‘V’ undeclared (first use in this function)
+  108 |   V
+      |   ^
+exercises.c:108:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:108:4: error: expected ‘;’ before ‘}’ token
+  108 |   V
+      |    ^
+      |    ;
+  109 | 
+  110 | }
+      | ~   
+exercises.c: In function ‘crearVector’:
+exercises.c:99:1: error: control reaches end of non-void function [-Werror=return-type]
+   99 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+39832ff
