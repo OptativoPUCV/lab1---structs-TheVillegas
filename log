@@ -241,3 +241,47 @@ Fri 10 Mar 2023 06:10:55 PM UTC:
  tests:  2|5
 total_score: 20/70
 c9e7648
+Tue 14 Mar 2023 11:07:19 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:11: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Werror=format=]
+   62 |   scanf("%c", (*p).nombre[30]);
+      |          ~^   ~~~~~~~~~~~~~~~
+      |           |              |
+      |           char *         int
+exercises.c:63:11: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Werror=format=]
+   63 |   scanf("%c", (*p).rut[11]);
+      |          ~^   ~~~~~~~~~~~~
+      |           |           |
+      |           char *      int
+exercises.c:64:11: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Werror=format=]
+   64 |   scanf("%d", (*p).edad);
+      |          ~^   ~~~~~~~~~
+      |           |       |
+      |           int *   int
+exercises.c:62:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   62 |   scanf("%c", (*p).nombre[30]);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:63:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   63 |   scanf("%c", (*p).rut[11]);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:64:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   64 |   scanf("%d", (*p).edad);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+exercises.c:62:26: error: array subscript 30 is above array bounds of ‘char[30]’ [-Werror=array-bounds]
+   62 |   scanf("%c", (*p).nombre[30]);
+      |               ~~~~~~~~~~~^~~~
+exercises.c:53:8: note: while referencing ‘nombre’
+   53 |   char nombre[30];
+      |        ^~~~~~
+exercises.c:63:23: error: array subscript 11 is above array bounds of ‘char[11]’ [-Werror=array-bounds]
+   63 |   scanf("%c", (*p).rut[11]);
+      |               ~~~~~~~~^~~~
+exercises.c:54:8: note: while referencing ‘rut’
+   54 |   char rut[11];
+      |        ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+6449ec5
