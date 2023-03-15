@@ -545,3 +545,14 @@ Tue 14 Mar 2023 11:59:48 PM UTC:
  tests:  3|4
 total_score: 30/70
 eb0b217
+Wed 15 Mar 2023 01:40:30 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:100:1: error: control reaches end of non-void function [-Werror=return-type]
+  100 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+05a27b2

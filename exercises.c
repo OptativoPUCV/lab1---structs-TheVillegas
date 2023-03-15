@@ -94,7 +94,8 @@ Vector * crearVector(int n) {
     return NULL;
   }
   
-  return v;
+  
+  
    
 }
 
