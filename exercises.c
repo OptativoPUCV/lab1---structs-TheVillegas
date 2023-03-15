@@ -116,20 +116,13 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-  
-  Vector * v = (Vector *) malloc(sizeof(Vector));
-  if(v==NULL)
-  {
-    puts("no se ingresaron datos");
-    return NULL;
-  }
-  v = (int *)calloc(n,sizeof(int));
-  for(int k = 0 ; k < i ; k++)
+  if(v==NULL || i i < 0 || i > v->capacidad)
     {
-      scanf("%d",valor);
-      v[k] = valor;
+      puts("no se ingreso ningun dato o sobrepaso la capacidad de almacenamiento");
+      return;
     }
-  return v;
+  v->datos[i] = valor;
+ 
 
 }
 

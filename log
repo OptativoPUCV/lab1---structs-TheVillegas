@@ -621,3 +621,14 @@ exercises.c:129:7: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 a66cc0e
+Wed 15 Mar 2023 03:34:59 PM UTC: 
+ exercises.c | 17 +++++------------
+ 1 file changed, 5 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:119:18: error: expected ‘)’ before ‘i’
+  119 |   if(v==NULL || i i < 0 || i > v->capacidad)
+      |     ~            ^~
+      |                  )
+Compilation failed
+2f3c9aa
