@@ -135,8 +135,10 @@ int obtenerValor(Vector * v, int i) {
    if(v==NULL || i  < 0 || i > v->capacidad)
     {
       puts("no se ingreso ningun dato o sobrepaso la capacidad de almacenamiento");
-      return;
+      return 1;
     }
+  
+    
    return 0;
 }
 
