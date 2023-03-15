@@ -579,3 +579,45 @@ Wed 15 Mar 2023 02:21:48 PM UTC:
  tests:  4|3
 total_score: 40/70
 20699e4
+Wed 15 Mar 2023 03:30:43 PM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:120:12: error: ‘v’ redeclared as different kind of symbol
+  120 |   Vector * v = (Vector *) malloc(sizeof(Vector));
+      |            ^
+exercises.c:118:28: note: previous definition of ‘v’ was here
+  118 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:124:12: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  124 |     return NULL;
+      |            ^~~~
+exercises.c:118:6: note: declared here
+  118 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+exercises.c:126:21: error: ‘n’ undeclared (first use in this function)
+  126 |   v = (int *)calloc(n,sizeof(int));
+      |                     ^
+exercises.c:126:21: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:129:15: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Werror=format=]
+  129 |       scanf("%d",valor);
+      |              ~^  ~~~~~
+      |               |  |
+      |               |  int
+      |               int *
+exercises.c:130:14: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  130 |       v[k] = valor;
+      |              ^~~~~
+exercises.c:132:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  132 |   return v;
+      |          ^
+exercises.c:118:6: note: declared here
+  118 | void asignarValor(Vector * v, int i, int valor) {
+      |      ^~~~~~~~~~~~
+exercises.c:129:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  129 |       scanf("%d",valor);
+      |       ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a66cc0e
