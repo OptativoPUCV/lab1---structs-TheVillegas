@@ -132,6 +132,11 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
+   if(v==NULL || i  < 0 || i > v->capacidad)
+    {
+      puts("no se ingreso ningun dato o sobrepaso la capacidad de almacenamiento");
+      return;
+    }
    return 0;
 }
 
