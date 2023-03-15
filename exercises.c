@@ -102,7 +102,7 @@ Vector * crearVector(int n) {
     return NULL;
     
   }
-  v->capacidad = datos;
+  v->capacidad = n;
   
   
   
