@@ -669,3 +669,17 @@ exercises.c:138:14: error: returning ‘void *’ from a function with return ty
 cc1: all warnings being treated as errors
 Compilation failed
 10be2b4
+Wed 15 Mar 2023 03:38:42 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:138:7: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  138 |       return;
+      |       ^~~~~~
+exercises.c:134:5: note: declared here
+  134 | int obtenerValor(Vector * v, int i) {
+      |     ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+26b9e43
