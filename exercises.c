@@ -93,9 +93,20 @@ Vector * crearVector(int n) {
   {
     return NULL;
   }
+
+  v->datos = (int *) calloc(n,sizeof(int));
+  if(v->datos == NULL)
+  {
+    puts("No se ingresaron datos");
+    free(v);
+    return NULL;
+    
+  }
+  v->capacidad = datos;
   
   
-  return NULL;
+  
+  return v;
    
 }
 

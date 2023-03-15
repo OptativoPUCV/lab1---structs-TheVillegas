@@ -562,3 +562,14 @@ Wed 15 Mar 2023 01:40:55 PM UTC:
  tests:  3|4
 total_score: 30/70
 0074c36
+Wed 15 Mar 2023 02:21:29 PM UTC: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:105:18: error: ‘datos’ undeclared (first use in this function)
+  105 |   v->capacidad = datos;
+      |                  ^~~~~
+exercises.c:105:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+16f5d1e
