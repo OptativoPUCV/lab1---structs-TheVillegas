@@ -132,15 +132,14 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-  if(v==NULL || i  < 0)
+  if(v==NULL || i  < 0 || i > v->capacidad)
     {
-      puts("no se ingreso ningun dato o sobrepaso la capacidad de almacenamiento");
+      puts("Error al encontrar indice fuera de rango");
       return 0;
     }
-    return v->datos[i];
     
     
-   return 0;
+   return v->datos[i];
 }
 
 /*
