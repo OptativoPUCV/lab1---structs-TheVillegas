@@ -658,3 +658,14 @@ Wed 15 Mar 2023 03:37:15 PM UTC:
  tests:  4|3
 total_score: 40/70
 b20c0a7
+Wed 15 Mar 2023 03:37:27 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:138:14: error: returning ‘void *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+  138 |       return NULL;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+10be2b4
