@@ -154,7 +154,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
     return;
   }
 
-  c->datos[i]=a->datos[i] + b->datos[i]
+  c->datos[i]=a->datos[i] + b->datos[i];
   
 
 }
