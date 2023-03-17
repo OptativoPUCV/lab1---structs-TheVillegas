@@ -171,6 +171,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     {
       puts("no hay datos almacenados");
     }
-    c->datos[0] = a1 + a2 + b1+b2 ;
-
+   for (int i = 0; i < a->capacidad; i++) {
+        c->datos[i] = a->datos[i] + b->datos[i];
+    }
 }
