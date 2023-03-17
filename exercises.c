@@ -153,6 +153,8 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
     puts("no hay datos para sumar");
     return;
   }
+
+  c->datos[i]=a->datos[i] + b->datos[i]
   
 
 }
