@@ -784,3 +784,19 @@ exercises.c:175:37: error: ‘b’ undeclared (first use in this function)
       |                                     ^
 Compilation failed
 c429eb4
+Fri 17 Mar 2023 01:04:37 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:174:26: error: invalid type argument of ‘->’ (have ‘int’)
+  174 |    for (int i = 0; i < a1->capacidad; i++) {
+      |                          ^~
+exercises.c:175:25: error: invalid type argument of ‘->’ (have ‘int’)
+  175 |         c->datos[i] = a1->datos[i] + b2->datos[i];
+      |                         ^~
+exercises.c:175:40: error: invalid type argument of ‘->’ (have ‘int’)
+  175 |         c->datos[i] = a1->datos[i] + b2->datos[i];
+      |                                        ^~
+Compilation failed
+e402b3b
