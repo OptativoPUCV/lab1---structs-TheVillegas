@@ -154,8 +154,10 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
     return;
   }
 
-  c->datos[i]=a->datos[i] + b->datos[i];
-  
+  for(int i = 0 ; i < a->capacidad ; i++)
+    {
+      c->datos[i]=a->datos[i] + b->datos[i];
+    }
 
 }
 
